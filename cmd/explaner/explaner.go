@@ -58,7 +58,7 @@ func GenerateExplanation(question, answer, currentExplanation string) (string, e
 	// Make a POST request to the ChatGPT API using Fiber's HTTP client
 	agent := client.Post("https://api.openai.com/v1/chat/completions").
 		Set("Content-Type", "application/json").
-		Set("Authorization", "Bearer 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").
+		Set("Authorization", "Bearer ").
 		Body([]byte(body))
 
 	_, resp, err := agent.Bytes()
