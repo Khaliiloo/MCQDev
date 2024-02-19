@@ -1,0 +1,64 @@
+/* Center the registration form vertically and horizontally */
+/*
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+*/
+
+/* Style the registration form container */
+.registration-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 100%; /* Set to 100% for screens larger than small screens */
+    margin: 0 auto;
+    min-width: 500px;
+    height: 400px;
+}
+
+/* Style the form title */
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style form input fields */
+.form-control {
+    margin-bottom: 15px;
+}
+
+/* Style the submit button */
+.btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+}
+.btn-success {
+    width: 100%;
+    background-color: green;
+    border: none;
+}
+
+/* Customize the hover effect for the submit button */
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Add spacing between the form and the link */
+.registration-form p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+    .registration-form {
+        max-width: 400px;
+    }
+}

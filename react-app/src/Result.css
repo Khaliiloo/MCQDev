@@ -1,0 +1,155 @@
+.result-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.result-table th {
+    background-color: #f2f2f2;
+}
+
+
+/* App.css */
+
+.app-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    /* Your header styles */
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    /* Your hamburger menu styles */
+}
+
+/*.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}*/
+
+.content {
+    /* Your main content styles */
+}
+
+
+/* App.css */
+
+/* Modal styles */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10%;
+    padding: 20px;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+    max-height: 80%; /* Set maximum height for the modal content */
+    overflow: auto; /* Enable scrolling within the modal content */
+}
+/* Styles for the table container */
+.table-container {
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative; /* Ensure relative positioning for absolute positioning of the table header */
+    flex-direction: column;
+}
+
+/* Styles for the table */
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Styles for the table header */
+.result-table th {
+    background-color: #f2f2f2;
+    position: sticky; /* Ensure the table header sticks to the top of the container */
+    top: 0; /* Align the table header to the top of the container */
+    z-index: 1; /* Ensure the table header is above the table body */
+}
+
+/* Styles for the table body */
+.result-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.result-table td.topicText {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.print-icon{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close:hover {
+    color: red;
+}
+
+.topicText{
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+.image-container {
+    /* Style the container for the image */
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.image-container img {
+    /* Style the image */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-height: 100%; /* Ensure the image doesn't exceed its container */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text */
+}

@@ -1,0 +1,53 @@
+/* print.css */
+
+@page {
+    size: A4 landscape;
+}
+/* Hide everything except the modal content */
+/*body *:not(.modal-content) {
+    display: none !important;
+}*/
+
+.modal-content {
+    display: block !important;
+    text-align: center;
+}
+
+td{
+    text-align: center!important;
+}
+th.topicText{
+    text-align: center;
+    padding-left: 20px;
+}
+td.topicText{
+    padding-left: 20px!important;
+    text-align: left!important;
+    margin-left: 10px;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th {
+    background-color: #f2f2f2;
+    position: sticky; /* Ensure the table header sticks to the top of the container */
+    top: 0; /* Align the table header to the top of the container */
+    z-index: 1; /* Ensure the table header is above the table body */
+}
+
+/* Styles for the table body */
+.result-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.modal-header {
+    display: none;
+}
+
+.result-container {
+    text-align: center;
+}

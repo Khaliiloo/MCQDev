@@ -1,0 +1,168 @@
+/* HamburgerMenu.css */
+.hamburger-menu {
+    position: relative;
+}
+
+.menu-icon {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.icon-bar {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+.icon-bar-dark {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.open .icon-bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.open .icon-bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu-items {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.menu-items-dark{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-items .link {
+    list-style: none;
+    text-underline: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.menu-items-dark .link {
+    list-style: none;
+    text-underline: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.menu-items .link:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-items-dark .link:hover {
+    background-color: #333;
+}
+.menu-items a {
+    text-decoration: none;
+    color: inherit;
+}
+.menu-items-dark a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mode-item .sub-menu {
+    display: none;
+}
+
+.mode-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+.sub-menu-dark {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.sub-menu-item {
+    cursor: pointer;
+    padding: 8px;
+    transition: background-color 0.2s;
+}
+
+.sub-menu-item:hover {
+    background-color: white;
+}
+.sub-menu-item-dark:hover {
+    background-color: #0d1228;
+}
+
+.sub-menu-item-dark {
+    cursor: pointer;
+    padding: 8px;
+    transition: background-color 0.2s;
+    background-color: #333;
+    color: #fff
+}
+.sub-menu-item .link:hover {
+    background-color: #000;
+}
+
+.sub-menu-item.selected {
+    font-weight: bold;
+}
+
+
+.dark-theme {
+    /* Example: Update the background and text colors to create a dark theme */
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme-white {
+    /* Example: Update the background and text colors to create a dark theme */
+    background-color: #0d1228;
+}
+.dark-theme-book {
+    background-color: #0d1228;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
